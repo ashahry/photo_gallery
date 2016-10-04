@@ -1,3 +1,4 @@
+
 //Photo Gallery
 
 var $overlay = $('<div id="overlay"></div>');
