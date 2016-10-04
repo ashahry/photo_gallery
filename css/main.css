@@ -111,27 +111,6 @@ img {
   margin-top: 45%;
   max-width: 70%;
 }
-<<<<<<< HEAD
-=======
-
-#overlay p {
-  color: white;
-  margin: auto;
-  padding: 2rem;
-  max-width: 360px;
-  font-family: 'Work Sans', sans-serif;
-  line-height: 1.3;
-  font-size: 0.9rem;
-}
-
-
-
-
-
-
-
-
->>>>>>> 01f91f1fb368a483e4901ca5622a6880987d7379
 
 #closeLightbox {
   position: absolute;
@@ -165,9 +144,3 @@ img {
   line-height: 1.3;
   font-size: 0.9rem;
 }
-
-
-
-
-
-

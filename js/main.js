@@ -7,8 +7,6 @@ var $caption = $('<p></p>');
 var $previousArrow = $('<div id="previousArrow"><img src="icons/previous.png" alt="previous" /></div>');
 var $nextArrow = $('<div id="nextArrow"><img src="icons/next.png" alt="next" /></div>');
 var $closeLightbox = $('<div id="closeLightbox"><img src="icons/close.png" alt="next" /></div>');
-var $closeLightbox = $('');
-
 
 
 // Lighbox
@@ -62,14 +60,6 @@ $('body').keydown(function(e){
   $closeLightbox.click(function(event) {
     $overlay.fadeOut(1000);
     //Allow the page to scroll when the lightbox is inactive
-
-//When one clicks on the the overlay it disappears
-
-$overlay.click(function(event){
-  //Fadeout the overlay
-  $overlay.fadeOut(1000);
-  //Allow the page to scroll when the lightbox is inactive
-
     document.body.style.overflow='auto';
 });
 
@@ -135,4 +125,3 @@ function getNextImage() {
   }
     getCurrentImage(thisImage);
 }
-
