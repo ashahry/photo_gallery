@@ -112,6 +112,26 @@ img {
   max-width: 70%;
 }
 
+#closeLightbox {
+  position: absolute;
+  left: 90%;
+  bottom: 85%;
+}
+
+#previousArrow {
+  position: absolute;
+  bottom: 67%;
+  right: 90%;
+}
+
+#nextArrow {
+  position: absolute;
+  bottom: 67%;
+  left: 90%;
+}
+
+
+
 #overlay p {
   color: white;
   margin: auto;
