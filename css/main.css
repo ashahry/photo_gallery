@@ -130,6 +130,10 @@ img {
   left: 90%;
 }
 
+#previousArrow img, #nextArrow img, #closeLightbox img{
+  border: none;
+}
+
 
 
 #overlay p {
