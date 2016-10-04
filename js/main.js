@@ -7,7 +7,9 @@ var $previousArrow = $('<div id="previousArrow"><img src="icons/previous.png" al
 var $nextArrow = $('<div id="nextArrow"><img src="icons/next.png" alt="next" /></div>');
 var $closeLightbox = $('');
 
+
 // Lighbox
+
 
 // Add overlay to the body
 $('body').append($overlay);
@@ -56,17 +58,77 @@ $('body').keydown(function(e){
 //When one clicks on the the overlay it disappears
 
 $overlay.click(function(event){
-  //Hide the overlay
+  //Fadeout the overlay
   $overlay.fadeOut(1000);
   //Allow the page to scroll when the lightbox is inactive
     document.body.style.overflow='auto';
 });
 
+
+//Lightbox navigation
+
+//When the previous button is clicked do...
+
+$previousArrow.on("click", function() {
+  getPreviousImage();
+});
+
+//When the previous arrow is pressed do...
+
+$('body').keydown(function(event) {
+  if(event.which == 37) {
+    getPreviousImage();
+  }
+});
+
+//When the next button is clicked do...
+
+$nextArrow.on("click", function() {
+  getNextImage();
+});
+
+//When the next arrow is pressed do...
+
+$('body').keydown(function(event) {
+  if(event.which == 39) {
+    getNextImage();
+  }
+});
+
+
 function getCurrentImage(currentImage) {
-    thisImage = currentImage;
-    var imageLocation = $(currentImage).attr("href");   // accessing attributes from currentImage to pull the href value 
-    $image.attr("src", imageLocation);   //Update overlay with the image linked in the link
+  thisImage = currentImage;
+  var imageLocation = $(currentImage).attr("href");   // accessing attributes from currentImage to pull the href value 
+  $image.attr("src", imageLocation);   //Update overlay with the image linked in the link
 }
+
+// //Get child's alt attribute and set caption
+//   var captionText = $(currentImage).children("img").attr("alt");
+//   $caption.text(captionText);
+// }
+
+function getPreviousImage() {
+  imageParent = $(thisImage).parent().prev();
+  if(imageParent.length!==0){
+    thisImage = $(imageParent).children("a");
+      // imageLocation = $(thisImage).attr("href");
+      // $image.attr("src", imageLocation);
+  }
+    getCurrentImage(thisImage);
+}
+
+function getNextImage() {
+  imageParent = $(thisImage).parent().next();
+  if(imageParent.length!==0){
+  thisImage = $(imageParent).children("a");
+    // imageLocation = $(thisImage).attr("href");
+    // $image.attr("src", imageLocation);
+  }
+    getCurrentImage(thisImage);
+}
+
+
+
 
 
 
