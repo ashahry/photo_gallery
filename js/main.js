@@ -1,4 +1,6 @@
 
+
+
 //Photo Gallery
 
 var $overlay = $('<div id="overlay"></div>');
@@ -125,9 +127,6 @@ function getNextImage() {
   }
     getCurrentImage(thisImage);
 }
-
-
-
 
 
 
