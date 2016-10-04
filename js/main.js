@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 01f91f1fb368a483e4901ca5622a6880987d7379
 //Photo Gallery
 
 var $overlay = $('<div id="overlay"></div>');
@@ -8,7 +11,11 @@ var $image = $('<img>');
 var $caption = $('<p></p>');
 var $previousArrow = $('<div id="previousArrow"><img src="icons/previous.png" alt="previous" /></div>');
 var $nextArrow = $('<div id="nextArrow"><img src="icons/next.png" alt="next" /></div>');
+<<<<<<< HEAD
 var $closeLightbox = $('<div id="closeLightbox"><img src="icons/close.png" alt="next" /></div>');
+=======
+var $closeLightbox = $('');
+>>>>>>> 01f91f1fb368a483e4901ca5622a6880987d7379
 
 
 // Lighbox
@@ -58,10 +65,19 @@ $('body').keydown(function(e){
 });
 
 
+<<<<<<< HEAD
 //When you click the overlay the overlay disappears 
   $closeLightbox.click(function(event) {
     $overlay.fadeOut(1000);
     //Allow the page to scroll when the lightbox is inactive
+=======
+//When one clicks on the the overlay it disappears
+
+$overlay.click(function(event){
+  //Fadeout the overlay
+  $overlay.fadeOut(1000);
+  //Allow the page to scroll when the lightbox is inactive
+>>>>>>> 01f91f1fb368a483e4901ca5622a6880987d7379
     document.body.style.overflow='auto';
 });
 
@@ -158,3 +174,9 @@ function getNextImage() {
 
 
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 01f91f1fb368a483e4901ca5622a6880987d7379
