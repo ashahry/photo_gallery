@@ -27,7 +27,7 @@ body {
 
 .search-gallery {
   width: 460px;
-  background;: #fff;
+  background: #fff;
   max-width: 90%;
   height: 2em;
   margin: 0 auto;
@@ -111,9 +111,6 @@ img {
   margin-top: 45%;
   max-width: 70%;
 }
-<<<<<<< HEAD
-=======
-
 #overlay p {
   color: white;
   margin: auto;
