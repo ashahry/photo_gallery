@@ -5,7 +5,7 @@ var $image = $('<img>');
 var $caption = $('<p></p>');
 var $previousArrow = $('<div id="previousArrow"><img src="icons/previous.png" alt="previous" /></div>');
 var $nextArrow = $('<div id="nextArrow"><img src="icons/next.png" alt="next" /></div>');
-var $closeLightbox = $('<div id="closeLightbox"><img src="icons/close.png" alt="close" /></div>');
+var $closeLightbox = $('');
 
 // Lighbox
 
@@ -27,7 +27,7 @@ $('.gallery-img a').click(function(event) {
   //Prevent the link from the default behavior
   event.preventDefault();
 
-  // getCurrentImage(this);
+  getCurrentImage(this);
   
   //update the overlay with the image inlked in the link
 
@@ -46,32 +46,32 @@ $('.gallery-img a').click(function(event) {
 
 //When you click the escape key the overlay disappears
 $('body').keydown(function(e){
-    console.log(e.which);
     if(e.which == 27){
         $overlay.fadeOut(1000);
         document.body.style.overflow='auto';
     }
 });
 
-//When you click on the close button the overlay disappears
 
-$closeLightbox.click(function(event) {
+//When one clicks on the the overlay it disappears
+
+$overlay.click(function(event){
+  //Hide the overlay
   $overlay.fadeOut(1000);
   //Allow the page to scroll when the lightbox is inactive
     document.body.style.overflow='auto';
-})
-
+});
 
 function getCurrentImage(currentImage) {
-  thisImage = currentImage;
-  var imageLocation = $(currentImage).attr("href");  //Accessing attributes from currentImage to get the href value
-  $image.attr("src", imageLocation);
-
-  //Get child's alt attribute and set caption
-  var captiontext = $(currentImage).children("img").attr("alt");
-  $caption.text(captionText);
-
+    thisImage = currentImage;
+    var imageLocation = $(currentImage).attr("href");   // accessing attributes from currentImage to pull the href value 
+    $image.attr("src", imageLocation);   //Update overlay with the image linked in the link
 }
+
+
+
+
+
 
 
 
