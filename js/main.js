@@ -126,4 +126,4 @@ function getNextImage() {
     getCurrentImage(thisImage);
 }
 
-// Search
+// Search.
