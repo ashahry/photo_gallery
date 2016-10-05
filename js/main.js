@@ -106,7 +106,7 @@ function getCurrentImage(currentImage) {
 //Get child's alt attribute and set caption
   var captionText = $(currentImage).children("img").attr("alt");
  $caption.text(captionText);
- }
+ 
 
 function getPreviousImage() {
   imageParent = $(thisImage).parent().prev();
