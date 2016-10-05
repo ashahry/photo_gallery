@@ -101,10 +101,10 @@ function getCurrentImage(currentImage) {
   $image.attr("src", imageLocation);   //Update overlay with the image linked in the link
 }
 
-// //Get child's alt attribute and set caption
-//   var captionText = $(currentImage).children("img").attr("alt");
-//   $caption.text(captionText);
-// }
+//Get child's alt attribute and set caption
+  var captionText = $(currentImage).children("img").attr("alt");
+ $caption.text(captionText);
+ }
 
 function getPreviousImage() {
   imageParent = $(thisImage).parent().prev();
