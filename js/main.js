@@ -125,3 +125,5 @@ function getNextImage() {
   }
     getCurrentImage(thisImage);
 }
+
+// Search
