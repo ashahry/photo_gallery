@@ -321,6 +321,7 @@ input::-moz-focus-inner {
 
 input {
   line-height: normal;
+  padding-left: 0.75em;
 }
 
 /**

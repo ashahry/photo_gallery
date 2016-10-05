@@ -25,6 +25,7 @@ $overlay.append($image);
 $overlay.append($previousArrow);
 $overlay.append($nextArrow);
 $overlay.append($closeLightbox);
+$overlay.append($caption);
 
 // Get the click event on a link to an image
 $('.gallery-img a').click(function(event) {
@@ -101,12 +102,13 @@ function getCurrentImage(currentImage) {
   thisImage = currentImage;
   var imageLocation = $(currentImage).attr("href");   // accessing attributes from currentImage to pull the href value 
   $image.attr("src", imageLocation);   //Update overlay with the image linked in the link
-}
+
 
 //Get child's alt attribute and set caption
-  var captionText = $(currentImage).children("img").attr("alt");
+  var captionText = $(thisImage).children("img").attr("alt");
  $caption.text(captionText);
  
+}
 
 function getPreviousImage() {
   imageParent = $(thisImage).parent().prev();
