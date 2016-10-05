@@ -1,3 +1,7 @@
+/*=======================
+GENERAL
+========================*/
+
 * {
   box-sizing: border-box;
 }
@@ -24,6 +28,10 @@ body {
   text-align: center;
 
 }
+
+/*======================
+SEARCH
+========================*/
 
 .search-gallery {
   width: 460px;
@@ -58,6 +66,11 @@ body {
 }
 }
 
+
+/*========================
+GALLERY
+=========================*/
+
 .main-content {
   border-top: 104px;
 }
@@ -90,6 +103,10 @@ img {
   -o-box-shadow: 0 0 50px rgba(0, 0, 0, .2);
 }
 
+/*=======================
+OVERLAY
+=========================*/
+
 #overlay {
   background: rgba(0, 0, 0, 0.7);
   width: 100%;
@@ -120,13 +137,13 @@ img {
 
 #previousArrow {
   position: absolute;
-  bottom: 67%;
+  bottom: 65%;
   right: 90%;
 }
 
 #nextArrow {
   position: absolute;
-  bottom: 67%;
+  bottom: 65%;
   left: 90%;
 }
 
@@ -144,3 +161,90 @@ img {
   line-height: 1.3;
   font-size: 0.9rem;
 }
+
+/*=====================
+MEDIA QUERIES
+*======================*/
+
+@media (min-width: 569px) {
+
+#overlay img {
+  height: 30%;
+  position: relative;
+}
+
+#overlay > img {
+  margin-top: 30%;
+  max-width: 70%;
+}
+
+#closeLightbox {
+  position: absolute;
+  left: 95%;
+  bottom: 85%;
+}
+
+#previousArrow {
+  position: absolute;
+  bottom: 65%;
+  right: 90%;
+}
+
+#nextArrow {
+  position: absolute;
+  bottom: 65%;
+  left: 90%;
+}
+
+}
+
+@media (min-width: 865px) {
+
+#overlay > img {
+  margin-top: 20%;
+  max-width: 80%;
+  width: 44%;
+  height: 35%;
+}
+
+#previousArrow {
+  position: absolute;
+  bottom: 65%;
+  right: 80%;
+}
+
+#nextArrow {
+  position: absolute;
+  bottom: 65%;
+  left: 80%;
+}
+
+}
+
+@media (min-width: 1020px) {
+
+  #overlay > img {
+  margin-top: 12%;
+  max-width: 90%;
+  width: 44%;
+  height: 35%;
+}
+
+#previousArrow {
+  position: absolute;
+  bottom: 65%;
+  right: 75%;
+}
+
+#nextArrow {
+  position: absolute;
+  bottom: 65%;
+  left: 75%;
+}
+
+#overlay p {
+  font-size: 1em;
+}
+
+}
+
