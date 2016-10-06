@@ -186,13 +186,13 @@ MEDIA QUERIES
 
 #previousArrow {
   position: absolute;
-  bottom: 65%;
+  bottom: 70%;
   right: 90%;
 }
 
 #nextArrow {
   position: absolute;
-  bottom: 65%;
+  bottom: 70%;
   left: 90%;
 }
 
@@ -209,13 +209,13 @@ MEDIA QUERIES
 
 #previousArrow {
   position: absolute;
-  bottom: 65%;
+  bottom: 70%;
   right: 80%;
 }
 
 #nextArrow {
   position: absolute;
-  bottom: 65%;
+  bottom: 70%;
   left: 80%;
 }
 
@@ -232,13 +232,13 @@ MEDIA QUERIES
 
 #previousArrow {
   position: absolute;
-  bottom: 65%;
+  bottom: 70%;
   right: 75%;
 }
 
 #nextArrow {
   position: absolute;
-  bottom: 65%;
+  bottom: 70%;
   left: 75%;
 }
 
