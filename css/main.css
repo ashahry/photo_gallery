@@ -219,6 +219,10 @@ MEDIA QUERIES
   left: 80%;
 }
 
+#overlay p {
+  font-size: 0.75em;
+}
+
 }
 
 @media (min-width: 1020px) {
