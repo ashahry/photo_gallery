@@ -180,8 +180,8 @@ MEDIA QUERIES
 
 #closeLightbox {
   position: absolute;
-  left: 95%;
-  bottom: 85%;
+  left: 81%;
+  top: 16%;
 }
 
 #previousArrow {
