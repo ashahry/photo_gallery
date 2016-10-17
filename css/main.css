@@ -149,6 +149,7 @@ OVERLAY
 
 #previousArrow img, #nextArrow img, #closeLightbox img{
   border: none;
+  cursor: pointer;
 }
 
 
@@ -241,6 +242,7 @@ MEDIA QUERIES
 }
 
 @media (min-width: 840px) {
+
 
   #overlay > img {
   margin-top: 15%;
