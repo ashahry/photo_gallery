@@ -219,18 +219,18 @@ MEDIA QUERIES
 #closeLightbox {
   position: absolute;
   left: 85%;
-  top: 20%;
+  top: 14%;
 }
 
 #previousArrow {
   position: absolute;
-  bottom: 65%;
+  bottom: 70%;
   right: 90%;
 }
 
 #nextArrow {
   position: absolute;
-  bottom: 65%;
+  bottom: 70%;
   left: 90%;
 }
 
