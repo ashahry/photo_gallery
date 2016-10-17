@@ -162,11 +162,16 @@ OVERLAY
   font-size: 0.9rem;
 }
 
+
 /*=====================
 MEDIA QUERIES
 *======================*/
 
-@media (min-width: 569px) {
+@media (min-width: 525px) {
+
+.main-content {
+  max-width: 765px;
+}
 
 #overlay img {
   height: 30%;
@@ -198,25 +203,35 @@ MEDIA QUERIES
 
 }
 
-@media (min-width: 865px) {
+@media (min-width: 765px) {
+
+.main-container {
+  max-width: 840px;
+}
 
 #overlay > img {
-  margin-top: 20%;
-  max-width: 80%;
-  width: 44%;
-  height: 35%;
+  margin-top: 30%;
+  max-width: 90%;
+  width: 70%;
+  height: 30%;
+}
+
+#closeLightbox {
+  position: absolute;
+  left: 85%;
+  top: 20%;
 }
 
 #previousArrow {
   position: absolute;
-  bottom: 70%;
-  right: 80%;
+  bottom: 65%;
+  right: 90%;
 }
 
 #nextArrow {
   position: absolute;
-  bottom: 70%;
-  left: 80%;
+  bottom: 65%;
+  left: 90%;
 }
 
 #overlay p {
@@ -225,25 +240,30 @@ MEDIA QUERIES
 
 }
 
-@media (min-width: 1020px) {
+@media (min-width: 840px) {
 
   #overlay > img {
-  margin-top: 12%;
-  max-width: 90%;
-  width: 44%;
+  margin-top: 15%;
+  width: 60%;
   height: 35%;
 }
 
 #previousArrow {
   position: absolute;
   bottom: 70%;
-  right: 75%;
+  right: 90%;
+}
+
+#closeLightbox {
+  position: absolute;
+  left: 80%;
+  top: 14%;
 }
 
 #nextArrow {
   position: absolute;
   bottom: 70%;
-  left: 75%;
+  left: 90%;
 }
 
 #overlay p {
@@ -251,4 +271,6 @@ MEDIA QUERIES
 }
 
 }
+
+
 
