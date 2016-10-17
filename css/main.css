@@ -250,20 +250,20 @@ MEDIA QUERIES
 
 #previousArrow {
   position: absolute;
-  bottom: 70%;
-  right: 90%;
+  bottom: 65%;
+  right: 85%;
 }
 
 #closeLightbox {
   position: absolute;
   left: 80%;
-  top: 14%;
+  top: 18%;
 }
 
 #nextArrow {
   position: absolute;
-  bottom: 70%;
-  left: 90%;
+  bottom: 65%;
+  left: 85%;
 }
 
 #overlay p {
