@@ -133,26 +133,11 @@ function getNextImage() {
 
 // Search
 
-//Get the images
-var $imgs = ('..gallery-img img');
-// get the input element
-var $search = $('.search-gallery');
-// create an array called cache
-var cache = [];
 
-//Create an IIFE
-(function() {
-//for each image
-$imgs.each(function() {
-//Add an object to the cache array
-  cache.push({
-    //This image
-    element: this,
-    //Its alt text (lowercase trimmed)
-    text: this.alt.trim().toLowerCase();
-  
-  });
-});
+
+
+
+
 
 
 
