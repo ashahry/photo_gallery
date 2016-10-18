@@ -134,7 +134,7 @@ function getNextImage() {
 // Search
 
 //Get the images
-var $imgs = ('.gallery-grid img');
+var $imgs = ('..gallery-img img');
 // get the input element
 var $search = $('.search-gallery');
 // create an array called cache
